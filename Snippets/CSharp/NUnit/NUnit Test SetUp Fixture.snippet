@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>NUnit Test SetUp Fixture</Title>
+      <Author>TTDev</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>nspecsetup</Shortcut>
+    </Header>
+    <Snippet>
+      <References>
+        <Reference>
+          <Assembly>nunit.framework.dll</Assembly>
+        </Reference>
+      </References>
+      <Imports>
+        <Import>
+          <Namespace>NUnit.Framework</Namespace>
+        </Import>
+      </Imports>	
+      <Code Language="csharp" Delimiter="$"><![CDATA[    [SetUpFixture]
+    public class MySetUpClass
+    {
+        [SetUp]
+        public void RunBeforeAnyTests()
+        {
+            // ...
+        }
+
+        [TearDown]
+        public void RunAfterAnyTests()
+        {
+            // ...
+        }
+    }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

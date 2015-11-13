@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>NUnit Test Exceptions</Title>
+      <Author>TTDev</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>nteste</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="csharp" Delimiter="$"><![CDATA[        [Test]
+        public void ItShouldRetunAnException()
+        {
+            TestDelegate testDelelgate = () => <object>.<method(args,args)>
+            Assert.Throws<Exception>(testDelelgate);  
+        }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
